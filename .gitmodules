@@ -1,0 +1,4 @@
+[submodule "ref/ml-agents"]
+	path = ref/ml-agents
+	url = https://github.com/Unity-Technologies/ml-agents.git
+	ignore = dirty

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6d05231d9a9ed7c42abc7cd91f802477
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - BarObject: {fileID: 3698460859997204991, guid: b4eee2e34cc7d0e4fb020e4ef9887047,
+      type: 3}
+  - InfectedBarMaterial: {instanceID: 0}
+  - RecoveredBarMaterial: {instanceID: 0}
+  - SusceptibleBarMaterial: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

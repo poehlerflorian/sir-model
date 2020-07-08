@@ -1,0 +1,112 @@
+behaviors:
+  normal:
+    trainer_type: ppo
+    hyperparameters:
+      learning_rate: 0.001
+      learning_rate_schedule: linear
+      batch_size: 1024
+      buffer_size: 50000
+      beta: 0.005
+      epsilon: 0.2
+      lambd: 0.95
+      num_epoch: 3
+    network_settings:
+      normalize: false
+      hidden_units: 128
+      num_layers: 2
+      vis_encode_type: simple
+    reward_signals:
+      extrinsic:
+        gamma: 0.8
+        strength: 1.0
+    keep_checkpoints: 5
+    checkpoint_interval: 50000
+    max_steps: 5000000
+    time_horizon: 64
+    summary_freq: 10000
+    threaded: true
+
+  extroverted:
+    trainer_type: ppo
+    hyperparameters:
+      learning_rate: 0.001
+      learning_rate_schedule: linear
+      batch_size: 1024
+      buffer_size: 50000
+      beta: 0.005
+      epsilon: 0.2
+      lambd: 0.95
+      num_epoch: 3
+    network_settings:
+      normalize: false
+      hidden_units: 128
+      num_layers: 2
+      vis_encode_type: simple
+    reward_signals:
+      extrinsic:
+        gamma: 0.8
+        strength: 1.0
+    keep_checkpoints: 5
+    checkpoint_interval: 50000
+    max_steps: 5000000
+    time_horizon: 64
+    summary_freq: 10000
+    threaded: true
+
+  introverted:
+    trainer_type: ppo
+    hyperparameters:
+      learning_rate: 0.001
+      learning_rate_schedule: linear
+      batch_size: 1024
+      buffer_size: 50000
+      beta: 0.005
+      epsilon: 0.2
+      lambd: 0.95
+      num_epoch: 3
+    network_settings:
+      normalize: false
+      hidden_units: 128
+      num_layers: 2
+      vis_encode_type: simple
+    reward_signals:
+      extrinsic:
+        gamma: 0.8
+        strength: 1.0
+    keep_checkpoints: 5
+    checkpoint_interval: 50000
+    max_steps: 5000000
+    time_horizon: 64
+    summary_freq: 10000
+    threaded: true
+
+  medic:
+    trainer_type: ppo
+    hyperparameters:
+      learning_rate: 0.0003
+      learning_rate_schedule: linear
+      batch_size: 1024
+      buffer_size: 8192
+      beta: 0.005
+      epsilon: 0.2
+      lambd: 0.95
+      num_epoch: 8
+    network_settings:
+      normalize: false
+      hidden_units: 512
+      num_layers: 2
+      vis_encode_type: simple
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+      curiosity:
+        strength: 0.02
+        gamma: 0.99
+        encoding_size: 256
+    keep_checkpoints: 5
+    checkpoint_interval: 100000
+    max_steps: 7000000
+    time_horizon: 64
+    summary_freq: 1000
+    threaded: true

@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3501600728515395255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3501600728515395253}
+  - component: {fileID: 3501600728515395254}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3501600728515395253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3501600728515395255}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3501600728515395254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3501600728515395255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b3272a7c13bbb428ab654c0b4b43a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChanceOfInfection: 0.05
+  MedicChanceOfInfection: 0.2
+  Citizen: {fileID: 8887356486009978575, guid: e0e9b41781cd75740bcc28c95e2d850f, type: 3}
+  CitizenAgent: {fileID: -4176997734427645775, guid: 799f1ebea61cd2a468aa10a4d1eb1788,
+    type: 3}
+  ExtrovertedAgent: {fileID: 3462145380842761504, guid: 792e24c2cf8485048a80e84e94604379,
+    type: 3}
+  IntrovertedAgent: {fileID: -2756305092764381358, guid: e2c97a247d462e9438ddc9050b8a4c54,
+    type: 3}
+  Medic: {fileID: 2003697173084794402, guid: bb161c09a042bc244bb2b38ae94b1cb4, type: 3}
+  Ambulance: {fileID: -154345096975982985, guid: 9230ca8419e516543b4591a3fb76cccb,
+    type: 3}
+  NumberOfNormalCitizen: 50
+  NumberOfExtrovertedCitizen: 25
+  NumberOfIntrovertedCitizen: 25
+  InfectedNormalCitizenAtStart: 1
+  InfectedExtrovertedCitizenAtStart: 0
+  InfectedIntrovertedCitizenAtStart: 0
+  CollisionsSymptomatic: 0
+  CollisionsTotal: 0
+  HealedCounter: 0
+  UseUserControl: 1
+  InfectedDurationMaxSeconds: 20
+  InfectedDurationMinSeconds: 10
+  IntervalToDrawGraphInSeconds: 0.5
+  RelativeSurvivalLength: []
+  NumberOfMedics: 1
+  ReloadIntervalInSeconds: 0.5
+  SizeX: 97
+  SizeZ: 97
+  SpeedOfCitizen: 20
+  SpeedOfMedic: 30
+  SpeedOfAmbulance: 60
+  TimeUntilContagiousInSeconds: 2
+  TimeUntilSymptomaticInSeconds: 4
+  UseMlAgents: 1
+  UseQuarantine: 0

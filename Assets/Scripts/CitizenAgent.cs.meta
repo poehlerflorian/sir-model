@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a66789cf0e473ad44abaddeb8102fdec
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - InfectedMaterial: {fileID: 2100000, guid: f06f384d26257b446b7a2cd7805e1dac, type: 2}
+  - InfectedNotContagiousMaterial: {fileID: 2100000, guid: 9004811c698ee7448964088894ddf543,
+      type: 2}
+  - InfectedSymptomaticMaterial: {fileID: 2100000, guid: 8d0a1ef7624212b48bfbf0d816139136,
+      type: 2}
+  - RecoveredMaterial: {fileID: 2100000, guid: 8c0a4b7e471a49542831d855c3219e2c, type: 2}
+  - SusceptibleMaterial: {fileID: 2100000, guid: 73f011538e5a5f147a16719326d2f01a,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
