@@ -151,22 +151,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChanceOfInfection: 1
+  MedicChanceOfInfection: 0.2
   Citizen: {fileID: 8887356486009978575, guid: e0e9b41781cd75740bcc28c95e2d850f, type: 3}
   CitizenAgent: {fileID: -4176997734427645775, guid: 799f1ebea61cd2a468aa10a4d1eb1788,
     type: 3}
-  InfectedCitizenAtStart: 10
+  ExtrovertedAgent: {fileID: 3462145380842761504, guid: 792e24c2cf8485048a80e84e94604379,
+    type: 3}
+  IntrovertedAgent: {fileID: -2756305092764381358, guid: e2c97a247d462e9438ddc9050b8a4c54,
+    type: 3}
+  Medic: {fileID: 2003697173084794402, guid: bb161c09a042bc244bb2b38ae94b1cb4, type: 3}
+  Ambulance: {fileID: -154345096975982985, guid: 9230ca8419e516543b4591a3fb76cccb,
+    type: 3}
+  NumberOfNormalCitizen: 50
+  NumberOfExtrovertedCitizen: 25
+  NumberOfIntrovertedCitizen: 25
+  InfectedNormalCitizenAtStart: 1
+  InfectedExtrovertedCitizenAtStart: 0
+  InfectedIntrovertedCitizenAtStart: 0
+  UseUserControl: 1
   InfectedDurationMaxSeconds: 20
   InfectedDurationMinSeconds: 10
   IntervalToDrawGraphInSeconds: 0.5
-  NumberOfCitizen: 100
+  NumberOfMedics: 1
   ReloadIntervalInSeconds: 0.5
   SizeX: 97
   SizeZ: 97
   SpeedOfCitizen: 30
+  SpeedOfMedic: 30
+  SpeedOfAmbulance: 60
   TimeUntilContagiousInSeconds: 2
   TimeUntilSymptomaticInSeconds: 4
   UseMlAgents: 1
   UseQuarantine: 0
+  CollisionsSymptomatic: 0
+  CollisionsTotal: 0
+  RelativeSurvivalLength: []
+  HealedCounter: 0
 --- !u!4 &383109258
 Transform:
   m_ObjectHideFlags: 0
